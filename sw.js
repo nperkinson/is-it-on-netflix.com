@@ -27,27 +27,35 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-5d6a836b7c8653b98d79.js"
+    "url": "webpack-runtime-f057126dfb98d421fc67.js"
   },
   {
     "url": "framework-fd2b85530eec85104a39.js"
   },
   {
-    "url": "app-6055112ceda9bf24f07e.js"
+    "url": "app-cabb62b5c4a194ef04fb.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5de600e772f7a8778b2db90724ea0c4f"
+    "revision": "4c07f7ab2207c37c9a2501aa1e4893b2"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-0097d26fbd474b34ff9b.js"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "f6081b83111aea4128c98944b7fafccc"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "f61dcf417359e8df8bde268a0b406585"
   },
   {
     "url": "polyfill-d06486d78b0d3a46b835.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "d259334bfe6fa82668b55334fa5fbbc4"
+    "revision": "6328ec67738d59e2844922b2b372df12"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -135,12 +143,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/is-it-on-netflix`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-6055112ceda9bf24f07e.js`))) {
+  if (!resources || !(await caches.match(`/is-it-on-netflix/app-cabb62b5c4a194ef04fb.js`))) {
     return await fetch(event.request)
   }
 
@@ -153,7 +161,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/is-it-on-netflix/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
