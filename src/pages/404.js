@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import SlideShow from '../components/SlideShow';
 
 var settings = {
   images: [
