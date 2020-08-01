@@ -1,10 +1,20 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
+var settings = {
+  images: [
+    { url: require('../assets/images/oops.jpg'), position: 'center' },
+  ],
+  // Delay.
+  delay: 6000,
+};
+
+
 const NotFoundPage = () => (
   <Layout darkText>
-    <h1>NOT FOUND</h1>
-    <p>Not a valid URL</p>
+    <h1>Oops</h1>
+    <p>This part of the site doesn't exist!</p>
+    <SlideShow settings={settings} />
   </Layout>
 );
 

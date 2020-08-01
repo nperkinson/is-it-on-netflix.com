@@ -17,10 +17,10 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Eventually.</li>
+        <li><a href="http://nickperkinson.com">Nick Perkinson</a> &copy; 2020.</li>
         <li>
           Credits: <a href="http://unsplash.com/">Unsplash</a> +
-          <a href="http://html5up.net">HTML5 UP</a>
+          <a href="http://html5up.net"> HTML5 UP</a>
         </li>
       </ul>
     </footer>

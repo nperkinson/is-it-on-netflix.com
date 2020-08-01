@@ -21,12 +21,12 @@ export class EmailForm extends Component {
     return (
       <form id="signup-form" onSubmit={this.onSubmit} method="post" action="#">
         <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Address"
+          type="text" //"email"
+          name="page_input" //"email"
+          id="text" // "email"
+          placeholder="Find your favorites, instantly"
         />
-        <input type="submit" value="Sign Up" />
+        <input type="submit" value="Search" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
         </span>
