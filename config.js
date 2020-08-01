@@ -29,4 +29,7 @@ module.exports = {
       url: 'mailto:n.perkinson@icloud.com',
     },
   ],
+  module.exports = {
+    pathPrefix: "/is-it-on-netflix",
+  }
 };
