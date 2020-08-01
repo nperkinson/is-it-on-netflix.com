@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-eventually/`, // This path is subpath of your hosting https://domain/portfolio
   // social
-  heading: 'Wheretowatch.com',
+  heading: 'Is it on Netflix?',
   subHeading:
     "Netflix, Hulu, Amazon Prime, Disney+ and HBO. Check the top 5 most popular streaming platforms for TV shows and movies.",
   socialLinks: [
