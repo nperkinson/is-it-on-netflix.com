@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Is it on Netflix?', // <title>
+  siteTitle: 'The Age Old Question', // <title>
   manifestName: 'Is it on Netflix?',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -12,7 +12,7 @@ module.exports = {
   // social
   heading: 'Is it on Netflix?',
   subHeading:
-    "Netflix, Hulu, Amazon Prime, Disney+ and HBO. Check the top 5 most popular streaming platforms for TV shows and movies.",
+    "...or Hulu, HBO, Amazon Prime or Disney+? Check the top 5 most popular streaming platforms for TV shows and movies.",
   socialLinks: [
     {
       icon: 'fa-github',

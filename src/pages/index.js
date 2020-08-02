@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import EmailForm from '../components/EmailForm';
 import SlideShow from '../components/SlideShow';
+import Results from '../components/Results';
 
 var settings = {
   images: [
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <Header />
     <EmailForm />
     <Footer />
+    <Results />
     <SlideShow settings={settings} />
   </Layout>
 );
