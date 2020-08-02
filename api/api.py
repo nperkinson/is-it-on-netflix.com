@@ -13,7 +13,9 @@ def my_form_post():
 
 url = "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup"
 
-querystring = {"term":"bojack","country":"us"}
+result = my_form_post()
+
+querystring = {"term": result,"country":"us"}
 
 headers = {
     'x-rapidapi-host': "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",

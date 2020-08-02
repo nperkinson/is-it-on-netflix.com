@@ -1,9 +1,7 @@
 h2#where-header {
     text-align: center;
     padding-top: 30px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    /* opacity: .4; */
+
 }
 .sites {
     text-align: center;
@@ -15,26 +13,19 @@ h2#where-header {
     width: 140px;
     display: inline-block;
     text-align: center;
-    filter: gray;
     /* -webkit-filter: grayscale(1);
     filter: grayscale(1); */
-    /* display: inline-block; */
-    /* padding-top: 13px;*/
     margin-left: 10px;
     margin-right: 10px;
-    /* text-decoration: none; */
     border-radius: 5px;
-    border: .2px solid gray;
+    border: 3px solid gray;
     /* opacity: .5; */
+    
 }
 
-#hbo {
-    /* border: 1px solid blue; */
-}
-
-#hulu {
-    /* border: 5px solid blue !important; */
-}
+/* #hbo {
+    border: 3px solid gold;
+} */
 
 .site-links {
     border-bottom: none;
