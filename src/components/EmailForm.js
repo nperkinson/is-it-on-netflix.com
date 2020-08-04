@@ -10,7 +10,8 @@ export class EmailForm extends Component {
   onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.setState({ message: 'Checking...' });
+    // this.setState({ message: 'Checking...' });
+    this.setState({ message: 'The site is currently down for maintenance!' });
     setTimeout(() => {
       this.setState({ message: '' });
     }, 3000);
@@ -27,7 +28,7 @@ export class EmailForm extends Component {
           placeholder="Find your favorites, instantly"
         />
         <input type="submit" value="Search" />
-        <span className={`${message ? 'visible success' : ''} message`}>
+        <span className={`${message ? 'visible failure' : ''} message`}>
           {message}
         </span>
       </form>

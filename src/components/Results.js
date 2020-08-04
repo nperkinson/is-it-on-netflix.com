@@ -7,7 +7,8 @@ export default function Results() {
         <div class='media'>
             <div>
                 <div>
-                    <h2 id="where-header">Where it's at</h2>
+                    {/* <h2 id="where-header">Where it's at</h2> */}
+                    <br></br>
                 </div>
                 <div class='sites'>
                     <a class='site-links' href="https://netflix.com" target="_blank">
@@ -40,6 +41,8 @@ export default function Results() {
                             </img>
                     </a>
                 </div>
+                
+                <br></br>
             </div>
         </div>
     </div>
